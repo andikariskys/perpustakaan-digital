@@ -64,14 +64,14 @@
                                 <article>
                                     <div class="single-book-box">
                                         <div class="post-thumbnail">
-                                            <a href="index.php?page=book-detail"><img alt="Book" src="assets/images/books-media/book-media-01.jpg" /></a>
+                                            <a href="index.php?page=detail-buku"><img alt="Book" src="assets/images/books-media/book-media-01.jpg" /></a>
                                         </div>
                                         <div class="post-detail">
                                             <header class="entry-header">
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <h3 class="entry-title">
-                                                            <a href="index.php?page=book-detail">The Great Gatsby</a>
+                                                            <a href="index.php?page=detail-buku">The Great Gatsby</a>
                                                         </h3>
                                                         <ul>
                                                             <li><strong>Pengarang:</strong> F. Scott Fitzgerald</li>
@@ -90,7 +90,7 @@
                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                                             </div>
                                             <footer class="entry-footer">
-                                                <a class="btn btn-dark-gray" href="index.php?page=book-detail">Lihat Detail</a>
+                                                <a class="btn btn-dark-gray" href="index.php?page=detail-buku">Lihat Detail</a>
                                             </footer>
                                         </div>
                                         <div class="clear"></div>
@@ -99,14 +99,14 @@
                                 <article>
                                     <div class="single-book-box">
                                         <div class="post-thumbnail">
-                                            <a href="index.php?page=book-detail"><img alt="Book" src="assets/images/books-media/book-media-02.jpg" /></a>
+                                            <a href="index.php?page=detail-buku"><img alt="Book" src="assets/images/books-media/book-media-02.jpg" /></a>
                                         </div>
                                         <div class="post-detail">
                                             <header class="entry-header">
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <h3 class="entry-title">
-                                                            <a href="index.php?page=book-detail">The Great Gatsby</a>
+                                                            <a href="index.php?page=detail-buku">The Great Gatsby</a>
                                                         </h3>
                                                         <ul>
                                                             <li><strong>Pengarang:</strong> F. Scott Fitzgerald</li>
@@ -125,7 +125,7 @@
                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                                             </div>
                                             <footer class="entry-footer">
-                                                <a class="btn btn-dark-gray" href="index.php?page=book-detail">Lihat Detail</a>
+                                                <a class="btn btn-dark-gray" href="index.php?page=detail-buku">Lihat Detail</a>
                                             </footer>
                                         </div>
                                         <div class="clear"></div>
@@ -134,14 +134,14 @@
                                 <article>
                                     <div class="single-book-box">
                                         <div class="post-thumbnail">
-                                            <a href="index.php?page=book-detail"><img alt="Book" src="assets/images/books-media/book-media-03.jpg" /></a>
+                                            <a href="index.php?page=detail-buku"><img alt="Book" src="assets/images/books-media/book-media-03.jpg" /></a>
                                         </div>
                                         <div class="post-detail">
                                             <header class="entry-header">
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <h3 class="entry-title">
-                                                            <a href="index.php?page=book-detail">The Great Gatsby</a>
+                                                            <a href="index.php?page=detail-buku">The Great Gatsby</a>
                                                         </h3>
                                                         <ul>
                                                             <li><strong>Pengarang:</strong> F. Scott Fitzgerald</li>
@@ -160,7 +160,7 @@
                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                                             </div>
                                             <footer class="entry-footer">
-                                                <a class="btn btn-dark-gray" href="index.php?page=book-detail">Lihat Detail</a>
+                                                <a class="btn btn-dark-gray" href="index.php?page=detail-buku">Lihat Detail</a>
                                             </footer>
                                         </div>
                                         <div class="clear"></div>
@@ -169,14 +169,14 @@
                                 <article>
                                     <div class="single-book-box">
                                         <div class="post-thumbnail">
-                                            <a href="index.php?page=book-detail"><img alt="Book" src="assets/images/books-media/book-media-04.jpg" /></a>
+                                            <a href="index.php?page=detail-buku"><img alt="Book" src="assets/images/books-media/book-media-04.jpg" /></a>
                                         </div>
                                         <div class="post-detail">
                                             <header class="entry-header">
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <h3 class="entry-title">
-                                                            <a href="index.php?page=book-detail">The Great Gatsby</a>
+                                                            <a href="index.php?page=detail-buku">The Great Gatsby</a>
                                                         </h3>
                                                         <ul>
                                                             <li><strong>Pengarang:</strong> F. Scott Fitzgerald</li>
@@ -195,7 +195,7 @@
                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                                             </div>
                                             <footer class="entry-footer">
-                                                <a class="btn btn-dark-gray" href="index.php?page=book-detail">Lihat Detail</a>
+                                                <a class="btn btn-dark-gray" href="index.php?page=detail-buku">Lihat Detail</a>
                                             </footer>
                                         </div>
                                         <div class="clear"></div>
@@ -204,14 +204,14 @@
                                 <article>
                                     <div class="single-book-box">
                                         <div class="post-thumbnail">
-                                            <a href="index.php?page=book-detail"><img alt="Book" src="assets/images/books-media/book-media-05.jpg" /></a>
+                                            <a href="index.php?page=detail-buku"><img alt="Book" src="assets/images/books-media/book-media-05.jpg" /></a>
                                         </div>
                                         <div class="post-detail">
                                             <header class="entry-header">
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <h3 class="entry-title">
-                                                            <a href="index.php?page=book-detail">The Great Gatsby</a>
+                                                            <a href="index.php?page=detail-buku">The Great Gatsby</a>
                                                         </h3>
                                                         <ul>
                                                             <li><strong>Pengarang:</strong> F. Scott Fitzgerald</li>
@@ -230,7 +230,7 @@
                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                                             </div>
                                             <footer class="entry-footer">
-                                                <a class="btn btn-dark-gray" href="index.php?page=book-detail">Lihat Detail</a>
+                                                <a class="btn btn-dark-gray" href="index.php?page=detail-buku">Lihat Detail</a>
                                             </footer>
                                         </div>
                                         <div class="clear"></div>
@@ -239,14 +239,14 @@
                                 <article>
                                     <div class="single-book-box">
                                         <div class="post-thumbnail">
-                                            <a href="index.php?page=book-detail"><img alt="Book" src="assets/images/books-media/book-media-06.jpg" /></a>
+                                            <a href="index.php?page=detail-buku"><img alt="Book" src="assets/images/books-media/book-media-06.jpg" /></a>
                                         </div>
                                         <div class="post-detail">
                                             <header class="entry-header">
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <h3 class="entry-title">
-                                                            <a href="index.php?page=book-detail">The Great Gatsby</a>
+                                                            <a href="index.php?page=detail-buku">The Great Gatsby</a>
                                                         </h3>
                                                         <ul>
                                                             <li><strong>Pengarang:</strong> F. Scott Fitzgerald</li>
@@ -265,7 +265,7 @@
                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                                             </div>
                                             <footer class="entry-footer">
-                                                <a class="btn btn-dark-gray" href="index.php?page=book-detail">Lihat Detail</a>
+                                                <a class="btn btn-dark-gray" href="index.php?page=detail-buku">Lihat Detail</a>
                                             </footer>
                                         </div>
                                         <div class="clear"></div>

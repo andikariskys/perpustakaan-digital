@@ -14,4 +14,4 @@ if (isset($_COOKIE['level'])) {
     setcookie('level', '', time() - 3600, '/');
 }
 
-header("Location: index.php?page=signin");
+header("Location: index.php?page=login");

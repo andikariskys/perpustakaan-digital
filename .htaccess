@@ -6,4 +6,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Redirect ke index.php?page=404
-RewriteRule ^(.*)$ /back-to-home.php [L,QSA]
+RewriteRule ^(.*)$ /kembali-ke-beranda.php [L,QSA]

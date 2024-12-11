@@ -29,10 +29,10 @@
                                         <div class="col-md-12">
                                             <div class="company-detail bg-dark margin-left">
                                                 <div class="signin-head">
-                                                    <h2>Sign in</h2>
+                                                    <h2>Log in</h2>
                                                     <span class="underline left"></span>
                                                 </div>
-                                                <form class="login" method="post" action="process.php">
+                                                <form class="login" method="post" action="proses.php">
                                                     <p class="form-row form-row-first input-required">
                                                         <label>
                                                             <span class="first-letter">Email</span>

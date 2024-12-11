@@ -27,11 +27,11 @@
                             <article>
                                 <div class="grid-item blog-item">
                                     <div class="post-thumbnail">
-                                        <a href="index.php?page=information-detail"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
+                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
                                     </div>
                                     <div class="post-detail">
                                         <header class="entry-header">
-                                            <h3 class="entry-title"><a href="index.php?page=information-detail">Here each week my friends</a></h3>
+                                            <h3 class="entry-title"><a href="index.php?page=detail-informasi">Here each week my friends</a></h3>
                                             <div class="entry-meta">
                                                 <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
                                             </div>
@@ -40,7 +40,7 @@
                                             <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
                                         </div>
                                         <footer class="entry-footer">
-                                            <a class="btn btn-default" href="index.php?page=information-detail">Read More</a>
+                                            <a class="btn btn-default" href="index.php?page=detail-informasi">Read More</a>
                                         </footer>
                                     </div>
                                 </div>
@@ -48,11 +48,11 @@
                             <article>
                                 <div class="grid-item blog-item">
                                     <div class="post-thumbnail">
-                                        <a href="index.php?page=information-detail"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
+                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
                                     </div>
                                     <div class="post-detail">
                                         <header class="entry-header">
-                                            <h3 class="entry-title"><a href="index.php?page=information-detail">Here each week my friends</a></h3>
+                                            <h3 class="entry-title"><a href="index.php?page=detail-informasi">Here each week my friends</a></h3>
                                             <div class="entry-meta">
                                                 <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
                                             </div>
@@ -61,7 +61,7 @@
                                             <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
                                         </div>
                                         <footer class="entry-footer">
-                                            <a class="btn btn-default" href="index.php?page=information-detail">Read More</a>
+                                            <a class="btn btn-default" href="index.php?page=detail-informasi">Read More</a>
                                         </footer>
                                     </div>
                                 </div>
@@ -69,11 +69,11 @@
                             <article>
                                 <div class="grid-item blog-item">
                                     <div class="post-thumbnail">
-                                        <a href="index.php?page=information-detail"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
+                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
                                     </div>
                                     <div class="post-detail">
                                         <header class="entry-header">
-                                            <h3 class="entry-title"><a href="index.php?page=information-detail">Here each week my friends</a></h3>
+                                            <h3 class="entry-title"><a href="index.php?page=detail-informasi">Here each week my friends</a></h3>
                                             <div class="entry-meta">
                                                 <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
                                             </div>
@@ -82,7 +82,7 @@
                                             <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
                                         </div>
                                         <footer class="entry-footer">
-                                            <a class="btn btn-default" href="index.php?page=information-detail">Read More</a>
+                                            <a class="btn btn-default" href="index.php?page=detail-informasi">Read More</a>
                                         </footer>
                                     </div>
                                 </div>
@@ -90,11 +90,11 @@
                             <article>
                                 <div class="grid-item blog-item">
                                     <div class="post-thumbnail">
-                                        <a href="index.php?page=information-detail"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
+                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
                                     </div>
                                     <div class="post-detail">
                                         <header class="entry-header">
-                                            <h3 class="entry-title"><a href="index.php?page=information-detail">Here each week my friends</a></h3>
+                                            <h3 class="entry-title"><a href="index.php?page=detail-informasi">Here each week my friends</a></h3>
                                             <div class="entry-meta">
                                                 <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
                                             </div>
@@ -103,7 +103,7 @@
                                             <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
                                         </div>
                                         <footer class="entry-footer">
-                                            <a class="btn btn-default" href="index.php?page=information-detail">Read More</a>
+                                            <a class="btn btn-default" href="index.php?page=detail-informasi">Read More</a>
                                         </footer>
                                     </div>
                                 </div>

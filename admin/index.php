@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin | Dashboard</title>
+  <title>Admin | beranda</title>
   <!-- Favicon -->
   <link href="../assets/images/logo-sd-kanisius.ico" rel="icon" type="image/x-icon" />
 
@@ -52,7 +52,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <a href="#" class="brand-link">
         <img src="../assets/images/logo-sd-kanisius.png" alt="AdminLTE Logo" class="brand-image " style="opacity: .8">
-        <span class="brand-text font-weight-light">Dashboard (Admin)</span>
+        <span class="brand-text font-weight-light">beranda (Admin)</span>
       </a>
       <div class="sidebar">
         <nav class="mt-2">
@@ -65,10 +65,10 @@
                 </p>
               </a>
             </li>
-            <li class="nav-item <?php if ($page == 'categories' or $page == 'add_category') {
+            <li class="nav-item <?php if ($page == 'kategori' or $page == 'tambah-kategori') {
                                   echo 'menu-open';
                                 } ?>">
-              <a href=" #" class="nav-link <?php if ($page == 'categories' or $page ==  'add_category') {
+              <a href=" #" class="nav-link <?php if ($page == 'kategori' or $page ==  'tambah-kategori') {
                                               echo 'active';
                                             } ?>">
                 <i class="nav-icon fas fa-list-ul"></i>
@@ -79,23 +79,23 @@
               </a>
               <ul class="nav nav-treeview ">
                 <li class="nav-item">
-                  <a href="index.php?page=categories" class="nav-link <?= $page == 'categories' ? 'active' : '' ?>">
+                  <a href="index.php?page=kategori" class="nav-link <?= $page == 'kategori' ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon text-success"></i>
                     <p>Lihat Data Kategori</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.php?page=add_category" class="nav-link <?= $page == 'add_category' ? 'active' : '' ?>">
+                  <a href="index.php?page=tambah-kategori" class="nav-link <?= $page == 'tambah-kategori' ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon text-success"></i>
                     <p>Tambah Data Kategori</p>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item <?php if ($page == 'books' or $page == 'add_book') {
+            <li class="nav-item <?php if ($page == 'buku' or $page == 'tambah-buku') {
                                   echo 'menu-open';
                                 } ?>">
-              <a href="#" class="nav-link <?php if ($page == 'books' or $page == 'add_book') {
+              <a href="#" class="nav-link <?php if ($page == 'buku' or $page == 'tambah-buku') {
                                             echo 'active';
                                           } ?>">
                 <i class="nav-icon fas fa-book"></i>
@@ -106,23 +106,23 @@
               </a>
               <ul class="nav nav-treeview ">
                 <li class="nav-item">
-                  <a href="index.php?page=books" class="nav-link <?= $page == 'books' ? 'active' : '' ?>">
+                  <a href="index.php?page=buku" class="nav-link <?= $page == 'buku' ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon text-info"></i>
                     <p>Lihat Data Buku</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.php?page=add_book" class="nav-link <?= $page == 'add_book' ? 'active' : '' ?>">
+                  <a href="index.php?page=tambah-buku" class="nav-link <?= $page == 'tambah-buku' ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon text-info"></i>
                     <p>Tambah Data Buku</p>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item <?php if ($page == 'users' or $page == 'add_user' or $page == 'log_users') {
+            <li class="nav-item <?php if ($page == 'user' or $page == 'tambah-user' or $page == 'aktivitas-user') {
                                   echo 'menu-open';
                                 } ?>">
-              <a href="#" class="nav-link <?php if ($page == 'users' or $page == 'add_user' or $page == 'log_users') {
+              <a href="#" class="nav-link <?php if ($page == 'user' or $page == 'tambah-user' or $page == 'aktivitas-user') {
                                             echo 'active';
                                           } ?>">
                 <i class="nav-icon fas fa-users-cog"></i>
@@ -133,19 +133,19 @@
               </a>
               <ul class="nav nav-treeview ">
                 <li class="nav-item">
-                  <a href="index.php?page=users" class="nav-link <?= $page == 'users' ? 'active' : '' ?>">
+                  <a href="index.php?page=user" class="nav-link <?= $page == 'user' ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon text-danger"></i>
                     <p>Lihat Data User</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.php?page=add_user" class="nav-link <?= $page == 'add_user' ? 'active' : '' ?>">
+                  <a href="index.php?page=tambah-user" class="nav-link <?= $page == 'tambah-user' ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon text-danger"></i>
                     <p>Tambah Data User</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.php?page=log_users" class="nav-link <?= $page == 'log_users' ? 'active' : '' ?>">
+                  <a href="index.php?page=aktivitas-user" class="nav-link <?= $page == 'aktivitas-user' ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon text-danger"></i>
                     <p>Log Data User</p>
                   </a>
@@ -180,31 +180,31 @@
 
       <?php switch ($page) {
         case null:
-          include 'dashboard.php';
+          include 'beranda.php';
           break;
-        case 'categories':
-          include 'table-categories.php';
+        case 'kategori':
+          include 'tabel-kategori.php';
           break;
-        case 'add_category':
-          include 'add_category.php';
+        case 'tambah-kategori':
+          include 'tambah-kategori.php';
           break;
-        case 'books':
-          include 'table-books.php';
+        case 'buku':
+          include 'tabel-buku.php';
           break;
-        case 'add_book':
-          include 'add_book.php';
+        case 'tambah-buku':
+          include 'tambah-buku.php';
           break;
-        case 'book_detail':
-          include 'book_detail.php';
+        case 'detail-buku':
+          include 'detail-buku.php';
           break;
-        case 'users':
-          include 'table-users.php';
+        case 'user':
+          include 'tabel-user.php';
           break;
-        case 'add_user':
-          include 'add_user.php';
+        case 'tambah-user':
+          include 'tambah-user.php';
           break;
-        case 'log_users':
-          include 'table-log-users.php';
+        case 'aktivitas-user':
+          include 'tabel-aktivitas-user.php';
           break;
         case 'profiles':
           include 'profiles.php';

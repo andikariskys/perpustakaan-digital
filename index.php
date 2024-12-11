@@ -67,20 +67,20 @@
                                                 } ?>">
                                         <a href="index.php">Beranda</a>
                                     </li>
-                                    <li class=" <?php if ($page == 'books') {
+                                    <li class=" <?php if ($page == 'daftar-buku') {
                                                     echo 'active';
                                                 } ?>">
-                                        <a href="index.php?page=books">Daftar Buku</a>
+                                        <a href="index.php?page=daftar-buku">Daftar Buku</a>
                                     </li>
-                                    <li class=" <?php if ($page == 'news-events') {
+                                    <li class=" <?php if ($page == 'berita-acara') {
                                                     echo 'active';
                                                 } ?>">
-                                        <a href="index.php?page=news-events">Berita &amp; Acara</a>
+                                        <a href="index.php?page=berita-acara">Berita &amp; Acara</a>
                                     </li>
-                                    <li class=" <?php if ($page == 'information') {
+                                    <li class=" <?php if ($page == 'informasi') {
                                                     echo 'active';
                                                 } ?>">
-                                        <a href="index.php?page=information">Informasi</a>
+                                        <a href="index.php?page=informasi">Informasi</a>
                                     </li>
                                     <li class=" <?php if ($page == 'contact') {
                                                     echo 'active';
@@ -91,17 +91,17 @@
                                     <li></li>
                                     <?php if ($level_session or $level_cookie == 'admin') { ?>
                                         <li>
-                                            <a href="admin/index.php">Dashboard</a>
+                                            <a href="admin/index.php">beranda</a>
                                         </li>
                                     <?php } else if ($level_session or $level_cookie == 'pustakawan') { ?>
                                         <li>
-                                            <a href="pustakawan/index.php">Dashboard</a>
+                                            <a href="pustakawan/index.php">beranda</a>
                                         </li>
                                     <?php } else { ?>
-                                        <li class=" <?php if ($page == 'signin') {
+                                        <li class=" <?php if ($page == 'login') {
                                                         echo 'active';
                                                     } ?>">
-                                            <a href="index.php?page=signin">Sign In</a>
+                                            <a href="index.php?page=login">Log In</a>
                                         </li>
                                     <?php } ?>
                                 </ul>
@@ -121,30 +121,30 @@
                                             } ?>">
                                     <a href="index.php">Beranda</a>
                                 </li>
-                                <li class=" <?php if ($page == 'books') {
+                                <li class=" <?php if ($page == 'daftar-buku') {
                                                 echo 'active';
                                             } ?>">
-                                    <a href="index.php?page=books">Daftar Buku</a>
+                                    <a href="index.php?page=daftar-buku">Daftar Buku</a>
                                 </li>
-                                <li class=" <?php if ($page == 'news-events') {
+                                <li class=" <?php if ($page == 'berita-acara') {
                                                 echo 'active';
                                             } ?>">
-                                    <a href="index.php?page=news-events">Berita &amp; Acara</a>
+                                    <a href="index.php?page=berita-acara">Berita &amp; Acara</a>
                                 </li>
-                                <li class=" <?php if ($page == 'information') {
+                                <li class=" <?php if ($page == 'informasi') {
                                                 echo 'active';
                                             } ?>">
-                                    <a href="index.php?page=information">Informasi</a>
+                                    <a href="index.php?page=informasi">Informasi</a>
                                 </li>
                                 <li class=" <?php if ($page == 'contact') {
                                                 echo 'active';
                                             } ?>">
                                     <a href="index.php?page=contact">Kontak</a>
                                 </li>
-                                <li class=" <?php if ($page == 'signin') {
+                                <li class=" <?php if ($page == 'login') {
                                                 echo 'active';
                                             } ?>">
-                                    <a href="index.php?page=signin">Sigin In</a>
+                                    <a href="index.php?page=login">Sigin In</a>
                                 </li>
                             </ul>
                         </div>
@@ -159,31 +159,31 @@
 
     switch ($page) {
         case null:
-            include 'dashboard.php';
+            include 'beranda.php';
             break;
-        case 'books':
-            include 'books-list.php';
+        case 'daftar-buku':
+            include 'daftar-buku.php';
             break;
-        case 'book-detail':
-            include 'book-detail.php';
+        case 'detail-buku':
+            include 'detail-buku.php';
             break;
-        case 'news-events':
-            include 'news-events.php';
+        case 'berita-acara':
+            include 'berita-acara.php';
             break;
-        case 'news-event-detail':
-            include 'news-event-detail.php';
+        case 'detail-berita-acara':
+            include 'detail-berita-acara.php';
             break;
-        case 'information':
-            include 'information.php';
+        case 'informasi':
+            include 'informasi.php';
             break;
-        case 'information-detail':
-            include 'information-detail.php';
+        case 'detail-informasi':
+            include 'detail-informasi.php';
             break;
         case 'contact':
             include 'contact.php';
             break;
-        case 'signin':
-            include 'signin.php';
+        case 'login':
+            include 'login.php';
             break;
         default:
             include '404.php';

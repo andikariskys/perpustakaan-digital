@@ -26,7 +26,7 @@
                     <section class="search-filters">
                         <div class="filter-box">
                             <h3>Cari Berita & Acara di Perpustakaan</h3>
-                            <form action="http://libraria.demo.presstigers.com/index.php?page=news-event-detail" method="get">
+                            <form action="http://libraria.demo.presstigers.com/index.php?page=detail-berita-acara" method="get">
                                 <div class="col-md-10">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
@@ -76,7 +76,7 @@
                             <div class="news-list-box">
                                 <div class="single-news-list">
                                     <figure>
-                                        <a href="index.php?page=news-event-detail"><img src="assets/images/news-event/news-listing-01.jpg" alt="News &amp; Event"></a>
+                                        <a href="index.php?page=detail-berita-acara"><img src="assets/images/news-event/news-listing-01.jpg" alt="News &amp; Event"></a>
                                     </figure>
                                     <div class="content-block">
                                         <div class="member-info">
@@ -98,9 +98,9 @@
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <h3><a href="index.php?page=news-event-detail">It uses a dictionary of over 200 Latin</a></h3>
+                                            <h3><a href="index.php?page=detail-berita-acara">It uses a dictionary of over 200 Latin</a></h3>
                                             <p>Morbi in erat laoreet, eleifend mi sit amet, eleifend mauris. Duis magna turpis, semper ac ligula id, elementum hendrerit augue. Aliquam euismod sem ut justo ultrices, in eleifend sapien hendrerit. Vestibulum sollicitudin dapibus aliquet. Suspendisse a commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum est turpis, at tristique velit. Quisque bibendum est turpis, at tristique velit.</p>
-                                            <a class="btn btn-primary" href="index.php?page=news-event-detail">Lihat Selengkapnya</a>
+                                            <a class="btn btn-primary" href="index.php?page=detail-berita-acara">Lihat Selengkapnya</a>
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
@@ -109,7 +109,7 @@
                             <div class="news-list-box">
                                 <div class="single-news-list">
                                     <figure>
-                                        <a href="index.php?page=news-event-detail"><img src="assets/images/news-event/news-listing-02.jpg" alt="News &amp; Event"></a>
+                                        <a href="index.php?page=detail-berita-acara"><img src="assets/images/news-event/news-listing-02.jpg" alt="News &amp; Event"></a>
                                     </figure>
                                     <div class="content-block">
                                         <div class="member-info">
@@ -131,9 +131,9 @@
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <h3><a href="index.php?page=news-event-detail">It uses a dictionary of over 200 Latin</a></h3>
+                                            <h3><a href="index.php?page=detail-berita-acara">It uses a dictionary of over 200 Latin</a></h3>
                                             <p>Morbi in erat laoreet, eleifend mi sit amet, eleifend mauris. Duis magna turpis, semper ac ligula id, elementum hendrerit augue. Aliquam euismod sem ut justo ultrices, in eleifend sapien hendrerit. Vestibulum sollicitudin dapibus aliquet. Suspendisse a commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum est turpis, at tristique velit. Quisque bibendum est turpis, at tristique velit.</p>
-                                            <a class="btn btn-primary" href="index.php?page=news-event-detail">Lihat Selengkapnya</a>
+                                            <a class="btn btn-primary" href="index.php?page=detail-berita-acara">Lihat Selengkapnya</a>
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
@@ -142,7 +142,7 @@
                             <div class="news-list-box">
                                 <div class="single-news-list">
                                     <figure>
-                                        <a href="index.php?page=news-event-detail"><img src="assets/images/news-event/news-listing-01.jpg" alt="News &amp; Event"></a>
+                                        <a href="index.php?page=detail-berita-acara"><img src="assets/images/news-event/news-listing-01.jpg" alt="News &amp; Event"></a>
                                     </figure>
                                     <div class="content-block">
                                         <div class="member-info">
@@ -164,9 +164,9 @@
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <h3><a href="index.php?page=news-event-detail">It uses a dictionary of over 200 Latin</a></h3>
+                                            <h3><a href="index.php?page=detail-berita-acara">It uses a dictionary of over 200 Latin</a></h3>
                                             <p>Morbi in erat laoreet, eleifend mi sit amet, eleifend mauris. Duis magna turpis, semper ac ligula id, elementum hendrerit augue. Aliquam euismod sem ut justo ultrices, in eleifend sapien hendrerit. Vestibulum sollicitudin dapibus aliquet. Suspendisse a commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum est turpis, at tristique velit. Quisque bibendum est turpis, at tristique velit.</p>
-                                            <a class="btn btn-primary" href="index.php?page=news-event-detail">Lihat Selengkapnya</a>
+                                            <a class="btn btn-primary" href="index.php?page=detail-berita-acara">Lihat Selengkapnya</a>
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
@@ -175,7 +175,7 @@
                             <div class="news-list-box">
                                 <div class="single-news-list">
                                     <figure>
-                                        <a href="index.php?page=news-event-detail"><img src="assets/images/news-event/news-listing-02.jpg" alt="News &amp; Event"></a>
+                                        <a href="index.php?page=detail-berita-acara"><img src="assets/images/news-event/news-listing-02.jpg" alt="News &amp; Event"></a>
                                     </figure>
                                     <div class="content-block">
                                         <div class="member-info">
@@ -197,9 +197,9 @@
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <h3><a href="index.php?page=news-event-detail">It uses a dictionary of over 200 Latin</a></h3>
+                                            <h3><a href="index.php?page=detail-berita-acara">It uses a dictionary of over 200 Latin</a></h3>
                                             <p>Morbi in erat laoreet, eleifend mi sit amet, eleifend mauris. Duis magna turpis, semper ac ligula id, elementum hendrerit augue. Aliquam euismod sem ut justo ultrices, in eleifend sapien hendrerit. Vestibulum sollicitudin dapibus aliquet. Suspendisse a commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum est turpis, at tristique velit. Quisque bibendum est turpis, at tristique velit.</p>
-                                            <a class="btn btn-primary" href="index.php?page=news-event-detail">Lihat Selengkapnya</a>
+                                            <a class="btn btn-primary" href="index.php?page=detail-berita-acara">Lihat Selengkapnya</a>
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
