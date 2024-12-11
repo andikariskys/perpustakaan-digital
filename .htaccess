@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Cek jika request tidak mengarah ke index.php atau file yang valid
+RewriteCond %{REQUEST_FILENAME} !^/index\.php$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect ke index.php?page=404
+RewriteRule ^(.*)$ /back-to-home.php [L,QSA]
