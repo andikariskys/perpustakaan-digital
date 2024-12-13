@@ -27,7 +27,7 @@
                             <article>
                                 <div class="grid-item blog-item">
                                     <div class="post-thumbnail">
-                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
+                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/informasi/blog-02.jpg" /></a>
                                     </div>
                                     <div class="post-detail">
                                         <header class="entry-header">
@@ -48,7 +48,7 @@
                             <article>
                                 <div class="grid-item blog-item">
                                     <div class="post-thumbnail">
-                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
+                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/informasi/blog-02.jpg" /></a>
                                     </div>
                                     <div class="post-detail">
                                         <header class="entry-header">
@@ -69,7 +69,7 @@
                             <article>
                                 <div class="grid-item blog-item">
                                     <div class="post-thumbnail">
-                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
+                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/informasi/blog-02.jpg" /></a>
                                     </div>
                                     <div class="post-detail">
                                         <header class="entry-header">
@@ -90,7 +90,7 @@
                             <article>
                                 <div class="grid-item blog-item">
                                     <div class="post-thumbnail">
-                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/blog/blog-02.jpg" /></a>
+                                        <a href="index.php?page=detail-informasi"><img alt="blog" src="assets/images/informasi/blog-02.jpg" /></a>
                                     </div>
                                     <div class="post-detail">
                                         <header class="entry-header">

@@ -16,7 +16,7 @@
 
 <section class="content">
     <div class="container-fluid">
-        <a href="index.php?page=add_book" class="btn btn-primary btn-sm">Tambah Data Buku</a>
+        <a href="index.php?page=tambah-buku" class="btn btn-primary btn-sm">Tambah Data Buku</a>
         <div class="card py-3 mt-2">
             <div class="table-responsive">
                 <table class="table table-hover table-striped text-nowrap" id="myTable">
@@ -40,8 +40,8 @@
                             <td>10</td>
                             <td>2024-12-08 20:12:55</td>
                             <td>
-                                <a href="index.php?page=book_detail" class="btn btn-info">Detail</a>
-                                <a href="index.php?page=add_book" class="btn btn-warning">Ubah</a>
+                                <a href="index.php?page=detail-buku" class="btn btn-info">Detail</a>
+                                <a href="index.php?page=tambah-buku" class="btn btn-warning">Ubah</a>
                                 <a href="#" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
@@ -53,8 +53,8 @@
                             <td>5</td>
                             <td>2024-12-08 20:12:55</td>
                             <td>
-                                <a href="index.php?page=book_detail" class="btn btn-info">Detail</a>
-                                <a href="index.php?page=add_book" class="btn btn-warning">Ubah</a>
+                                <a href="index.php?page=detail-buku" class="btn btn-info">Detail</a>
+                                <a href="index.php?page=tambah-buku" class="btn btn-warning">Ubah</a>
                                 <a href="#" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>

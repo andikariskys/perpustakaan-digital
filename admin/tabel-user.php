@@ -16,7 +16,7 @@
 
 <section class="content">
     <div class="container-fluid">
-        <a href="index.php?page=add_user" class="btn btn-primary btn-sm">Tambah Data User</a>
+        <a href="index.php?page=tambah-user" class="btn btn-primary btn-sm">Tambah Data User</a>
         <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
             <p>
                 <strong>Akun berhasil dibuat!<br>(Informasi Akun)</strong><br>
@@ -53,7 +53,7 @@
                             <td>Aktif</td>
                             <td>2024-12-08 20:12:55</td>
                             <td>
-                                <a href="index.php?page=add_user" class="btn btn-warning">Ubah</a>
+                                <a href="index.php?page=tambah-user" class="btn btn-warning">Ubah</a>
                                 <a href="#" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
@@ -66,7 +66,7 @@
                             <td>Non-aktif</td>
                             <td>2024-12-08 20:12:56</td>
                             <td>
-                                <a href="index.php?page=add_user" class="btn btn-warning">Ubah</a>
+                                <a href="index.php?page=tambah-user" class="btn btn-warning">Ubah</a>
                                 <a href="#" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>

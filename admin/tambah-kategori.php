@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <div class="form-group">
                         <label for="inputCategory">Nama Kategori</label>
-                        <input type="text" class="form-control" id="inputCategory" placeholder="Materi Kelas IV" required maxlength="30">
+                        <input type="text" class="form-control" id="inputCategory" name="nama-kategori" placeholder="Materi Kelas IV" required maxlength="30">
                     </div>
                 </div>
 

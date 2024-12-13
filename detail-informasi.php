@@ -1,6 +1,6 @@
 
 <!-- Start: Page Banner -->
-<section class="page-banner blog-banner">
+<section class="page-banner services-banner">
             <div class="container">
                 <div class="banner-header">
                     <h2>Detail Informasi</h2>
@@ -18,7 +18,7 @@
         </section>
         <!-- End: Page Banner -->
 
-        <!-- Start: Blog Section -->
+        <!-- Start: informasi Section -->
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
@@ -35,7 +35,7 @@
                                                 </header>
                                                 <div class="post-thumbnail">
                                                     <figure>
-                                                        <img alt="blog" src="assets/images/blog/post-detail-img.jpg" />
+                                                        <img alt="informasi" src="assets/images/informasi/post-detail-img.jpg" />
                                                     </figure>
                                                 </div>
                                                 <div class="post-detail">
@@ -56,4 +56,4 @@
                 </main>
             </div>
         </div>
-        <!-- End: Blog Section -->
+        <!-- End: informasi Section -->

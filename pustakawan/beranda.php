@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">Dashboard Admin</h1>
+                <h1 class="m-0">Dashboard Pustakawan</h1>
                 <h6>Selamat datang, <?= $nama ?>!</h6>
             </div><!-- /.col -->
             <div class="col-sm-6">
@@ -25,12 +25,12 @@
                     <div class="inner">
                         <h3>150</h3>
 
-                        <p>Total buku terdaftar</p>
+                        <p>Total buku dipinjam</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-ios-book"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="index.php?page=peminjaman" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -40,12 +40,12 @@
                     <div class="inner">
                         <h3>53</h3>
 
-                        <p>Buku dipinjam</p>
+                        <p>Informasi diterbitkan</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-ios-timer"></i>
+                        <i class="ion ion-ios-information"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="index.php?page=informasi" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -60,7 +60,7 @@
                     <div class="icon">
                         <i class="ion ion-ios-paper "></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="index.php?page=berita" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -75,7 +75,7 @@
                     <div class="icon">
                         <i class="ion ion-android-calendar"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="index.php?page=acara" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
