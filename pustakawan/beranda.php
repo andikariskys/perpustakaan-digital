@@ -1,3 +1,26 @@
+<?php
+
+$queryBuku = "SELECT COUNT(*) AS total FROM data_buku";
+$resultBuku = mysqli_query($conn, $queryBuku);
+$dataBuku = mysqli_fetch_assoc($resultBuku);
+$totalBuku = $dataBuku['total'];
+
+$queryInformasi = "SELECT COUNT(*) AS total FROM data_informasi";
+$resultInformasi = mysqli_query($conn, $queryInformasi);
+$dataInformasi = mysqli_fetch_assoc($resultInformasi);
+$totalInformasi = $dataInformasi['total'];
+
+$queryBerita = "SELECT COUNT(*) AS total FROM data_berita_acara WHERE jenis='berita'";
+$resultBerita = mysqli_query($conn, $queryBerita);
+$dataBerita = mysqli_fetch_assoc($resultBerita);
+$totalBerita = $dataBerita['total'];
+
+$queryAcara = "SELECT COUNT(*) AS total FROM data_berita_acara WHERE jenis='acara'";
+$resultAcara = mysqli_query($conn, $queryAcara);
+$dataAcara = mysqli_fetch_assoc($resultAcara);
+$totalAcara = $dataAcara['total'];
+?>
+
 <div class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -23,7 +46,7 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>150</h3>
+                        <h3><?= $totalBuku ?></h3>
 
                         <p>Total buku dipinjam</p>
                     </div>
@@ -38,7 +61,7 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>53</h3>
+                        <h3><?= $totalInformasi ?></h3>
 
                         <p>Informasi diterbitkan</p>
                     </div>
@@ -53,7 +76,7 @@
                 <!-- small box -->
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3>44</h3>
+                        <h3><?= $totalBerita ?></h3>
 
                         <p>Total berita diterbitkan</p>
                     </div>
@@ -68,7 +91,7 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                     <div class="inner">
-                        <h3>65</h3>
+                        <h3><?= $totalAcara ?></h3>
 
                         <p>Total acara diterbitkan</p>
                     </div>

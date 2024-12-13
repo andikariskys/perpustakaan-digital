@@ -1,3 +1,8 @@
+<?php
+// Query untuk mengambil data acara dengan jenis 'berita'
+$sql = "SELECT * FROM data_berita_acara WHERE jenis = 'berita' ORDER BY tgl_ditambahkan DESC";
+$result = mysqli_query($conn, $sql); ?>
+
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -32,32 +37,30 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Berita Ujian Semester</td>
-                            <td><?= substr("Berita ujian semester adalah informasi yang berkaitan dengan jadwal dan persiapan ujian akhir semester yang diadakan setiap semester di sekolah. Ujian semester merupakan evaluasi penting untuk mengukur pemahaman siswa terhadap materi pelajaran yang telah diajarkan selama satu semester.", 0, 50) ?></td>
-                            <td>2024-12-20</td>
-                            <td> - </td>
-                            <td>2024-12-08 20:04:12</td>
-                            <td>
-                                <a href="index.php?page=detail-berita" class="btn btn-info">Detail</a>
-                                <a href="index.php?page=tambah-berita" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Peluncuran Aplikasi Pembelajaran Baru</td>
-                            <td><?= substr("Pemerintah meluncurkan aplikasi pembelajaran baru yang dapat diakses oleh semua pelajar di Indonesia. Aplikasi ini dirancang untuk memudahkan proses pembelajaran di luar sekolah, dengan fitur-fitur interaktif seperti video pembelajaran, kuis, dan forum diskusi.", 0, 50) ?></td>
-                            <td>2024-12-12</td>
-                            <td> - </td>
-                            <td>2024-12-09 10:22:34</td>
-                            <td>
-                                <a href="index.php?page=detail-berita" class="btn btn-info">Detail</a>
-                                <a href="index.php?page=tambah-berita" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
+                        <?php
+                        if (mysqli_num_rows($result) > 0) {
+                            $no = 1;
+                            while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                                <tr>
+                                    <td><?= $no++ ?></td>
+                                    <td><?= $row['judul'] ?></td>
+                                    <td><?= substr($row['deskripsi'], 0, 50) ?>...</td>
+                                    <td><?= $row['tgl_acara'] ?></td>
+                                    <td><?= $row['waktu'] ?></td>
+                                    <td><?= $row['tgl_ditambahkan'] ?></td>
+                                    <td>
+                                        <a href="index.php?page=detail-berita&id_berita=<?= $row['id_berita'] ?>" class="btn btn-info">Detail</a>
+                                        <a href="index.php?page=tambah-berita&id_berita=<?= $row['id_berita'] ?>" class="btn btn-warning">Ubah</a>
+                                        <a href="#" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus acara ini?')">Hapus</a>
+                                    </td>
+                                </tr>
+                        <?php
+                            }
+                        } else {
+                            echo "<tr><td colspan='7'>Tidak ada acara.</td></tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>

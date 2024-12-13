@@ -1,3 +1,10 @@
+<?php
+$sql = "SELECT dp.id_peminjaman, dp.tgl_pinjam, dp.tgl_kembali, dp.status, db.judul AS nama_buku, dp.nama_siswa, dp.kelas 
+FROM data_peminjaman dp
+JOIN data_buku db ON dp.id_buku = db.id_buku";
+$result = mysqli_query($conn, $sql);
+?>
+
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -33,32 +40,33 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Pemrograman Web Modern</td>
-                            <td>Ali Budi</td>
-                            <td>VI-A</td>
-                            <td>2024-12-01</td>
-                            <td>2024-12-15</td>
-                            <td><a href="#" class="btn btn-sm btn-success">dipinjam</a></td>
-                            <td>
-                                <a href="index.php?page=tambah-peminjaman" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Belajar Database MySQL</td>
-                            <td>Siti Nura</td>
-                            <td>VII-B</td>
-                            <td>2024-12-05</td>
-                            <td>2024-12-20</td>
-                            <td>dikembalikan</td>
-                            <td>
-                                <a href="index.php?page=tambah-peminjaman" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
+                        <?php
+                        if (mysqli_num_rows($result) > 0) {
+                            $no = 1;
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                $status_button = ($row['status'] == 'dipinjam')
+                                    ? "<a href='#' class='btn btn-sm btn-success'>Dipinjam</a>"
+                                    : $row['status'];
+                        ?>
+                                <tr>
+                                    <td><?= $no++ ?></td>
+                                    <td><?= $row['nama_buku'] ?></td>
+                                    <td><?= $row['nama_siswa'] ?></td>
+                                    <td><?= $row['kelas'] ?></td>
+                                    <td><?= $row['tgl_pinjam'] ?></td>
+                                    <td><?= $row['tgl_kembali'] ?></td>
+                                    <td><?= $status_button ?></td>
+                                    <td>
+                                        <a href="index.php?page=tambah-peminjaman&id_peminjaman=<?= $row['id_peminjaman'] ?>" class="btn btn-warning">Ubah</a>
+                                        <a href="#" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus peminjaman ini?')">Hapus</a>
+                                    </td>
+                                </tr>
+                        <?php
+                            }
+                        } else {
+                            echo "<tr><td colspan='8'>Tidak ada data peminjaman.</td></tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>

@@ -44,13 +44,13 @@ if (mysqli_num_rows($result) > 0) {
     } else {
         echo "<script>
             alert('Password yang Anda masukkan salah!');
-            window.location.href='index.php?page=signin'
+            window.location.href='index.php?page=login'
         </script>";
     }
 } else {
     echo "<script>
         alert('Email yang Anda masukkan tidak ditemukan!');
-        window.location.href='index.php?page=signin'
+        window.location.href='index.php?page=login'
     </script>";
 }
 

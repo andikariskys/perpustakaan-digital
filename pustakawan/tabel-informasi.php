@@ -1,3 +1,8 @@
+<?php
+// Query untuk mengambil data informasi
+$sql = "SELECT * FROM data_informasi ORDER BY tgl_pembuatan DESC";
+$result = mysqli_query($conn, $sql); ?>
+
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -30,28 +35,28 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Informasi Layanan Peminjaman Buku</td>
-                            <td><?= substr("Peminjaman buku di perpustakaan sekolah merupakan layanan yang sangat penting untuk mendukung kegiatan belajar mengajar di sekolah. Perpustakaan menyediakan berbagai jenis buku, mulai dari buku pelajaran, buku referensi.", 0, 50) ?>...</td>
-                            <td>2024-12-08 20:04:12</td>
+                        <?php
+                        if (mysqli_num_rows($result) > 0) {
+                            $no = 1;
+                            while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                                <tr>
+                                <td><?= $no++ ?></td>
+                            <td><?= $row['judul'] ?></td>
+                            <td><?= substr($row['deskripsi'], 0, 50) ?>...</td>
+                            <td><?= $row['tgl_pembuatan'] ?></td>
                             <td>
-                                <a href="index.php?page=detail-informasi" class="btn btn-info">Detail</a>
-                                <a href="index.php?page=tambah-informasi" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
+                                <a href="index.php?page=detail-informasi&id_informasi=<?= $row['id_informasi'] ?>" class="btn btn-info">Detail</a>
+                                <a href="index.php?page=tambah-informasi&id_informasi=<?= $row['id_informasi'] ?>" class="btn btn-warning">Ubah</a>
+                                <a href="#" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus informasi ini?')">Hapus</a>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Pengumuman Libur Sekolah</td>
-                            <td><?= substr("Pengumuman libur sekolah adalah informasi yang sangat ditunggu oleh seluruh siswa dan orang tua. Sekolah akan libur selama dua minggu pada akhir bulan ini, tepatnya dari tanggal 24 Desember hingga 7 Januari.", 0, 50) ?>...</td>
-                            <td>2024-12-08 20:04:12</td>
-                            <td>
-                                <a href="index.php?page=detail-informasi" class="btn btn-info">Detail</a>
-                                <a href="index.php?page=tambah-informasi" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
+                                </tr>
+                        <?php
+                            }
+                        } else {
+                            echo "<tr><td colspan='5'>Tidak ada informasi.</td></tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>

@@ -1,3 +1,8 @@
+<?php
+// Query untuk mengambil data user
+$sql = "SELECT * FROM data_user";
+$result = mysqli_query($conn, $sql); ?>
+
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -17,17 +22,17 @@
 <section class="content">
     <div class="container-fluid">
         <a href="index.php?page=tambah-user" class="btn btn-primary btn-sm">Tambah Data User</a>
-        <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+        <!-- <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
             <p>
                 <strong>Akun berhasil dibuat!<br>(Informasi Akun)</strong><br>
-                <b>Email : </b> admin1@email.com<br>
-                <b>Password : </b> 66f28d46f08d6<br>
+                <b>Email : </b> <?= htmlspecialchars($row['email']) ?><br>
+                <b>Password : </b> <?= htmlspecialchars($row['password']) ?><br>
                 <i>Tutup informasi ini jika password sudah disalin/disimpam</i>
             </p>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-        </div>
+        </div> -->
         <div class="card py-3 mt-2">
             <div class="table-responsive">
                 <table class="table table-hover table-striped text-nowrap" id="myTable">
@@ -44,32 +49,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Rochman Rosyad</td>
-                            <td>admin1@email.com</td>
-                            <td><a href="#" class="btn btn-sm btn-success">Reset Password</a></td>
-                            <td>Admin</td>
-                            <td>Aktif</td>
-                            <td>2024-12-08 20:12:55</td>
-                            <td>
-                                <a href="index.php?page=tambah-user" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Rina Sari</td>
-                            <td>pustakawan@email.com</td>
-                            <td><a href="#" class="btn btn-sm btn-success">Reset Password</a></td>
-                            <td>Pustakawan</td>
-                            <td>Non-aktif</td>
-                            <td>2024-12-08 20:12:56</td>
-                            <td>
-                                <a href="index.php?page=tambah-user" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
+                        <?php if (mysqli_num_rows($result) > 0) {
+                            $no = 1;
+                            while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                                <tr>
+                                    <td><?= $no++ ?></td>
+                                    <td><?= htmlspecialchars($row['nama']) ?></td>
+                                    <td><?= htmlspecialchars($row['email']) ?></td>
+                                    <td><a href="#" class="btn btn-sm btn-success">Reset Password</a></td>
+                                    <td><?= ucfirst($row['level']) ?></td>
+                                    <td><?= ucfirst($row['status']) ?></td>
+                                    <td><?= $row['tgl_pendaftaran'] ?></td>
+                                    <td>
+                                        <a href="index.php?page=ubah-user&id_user=<?= $row['id_user'] ?>" class="btn btn-warning">Ubah</a>
+                                        <a href="#" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus user ini?')">Hapus</a>
+                                    </td>
+                                </tr>
+                        <?php
+                            }
+                        } else {
+                            echo "<tr><td colspan='8'>Tidak ada data pengguna.</td></tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>

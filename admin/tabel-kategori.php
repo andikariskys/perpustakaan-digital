@@ -1,3 +1,8 @@
+<?php
+// Koneksi ke database menggunakan variabel $conn
+$sql = "SELECT * FROM data_kategori";
+$result = mysqli_query($conn, $sql); ?>
+
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -28,22 +33,24 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Pemrograman</td>
-                            <td>
-                                <a href="index.php?page=tambah-kategori" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Database</td>
-                            <td>
-                                <a href="index.php?page=tambah-kategori" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                        </tr>
+                        <?php
+                        // Cek apakah ada data kategori
+                        if ($result->num_rows > 0) {
+                            $no = 1;
+                            while ($row = $result->fetch_assoc()) { ?>
+                                <tr>
+                                    <td><?= $no++ ?></td>
+                                    <td><?= $row['nama'] ?></td>
+                                    <td>
+                                        <a href="index.php?page=ubah-kategori&id_kategori= <?= $row['id_kategori'] ?>" class="btn btn-warning">Ubah</a>
+                                        <a href="#" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus kategori ini?')">Hapus</a>
+                                    </td>
+                                </tr>
+                        <?php }
+                        } else {
+                            echo "<tr><td colspan='3'>Tidak ada data kategori.</td></tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>

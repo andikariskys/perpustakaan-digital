@@ -31,5 +31,10 @@ if (isset($_SESSION['nama'])) {
     $nama = null;
 }
 
-$level_session = isset($_SESSION['level']) ? $_SESSION['level'] : null;
-$level_cookie = isset($_COOKIE['level']) ? $_COOKIE['level'] : null;
+if (isset($_SESSION['level'])) {
+    $level = $_SESSION['level'];
+} else if (isset($_COOKIE['level'])) {
+    $level = $_COOKIE['level'];
+} else {
+    $level = null;
+}

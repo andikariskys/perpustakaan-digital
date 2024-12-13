@@ -89,11 +89,11 @@
                                     </li>
                                     <li></li>
                                     <li></li>
-                                    <?php if ($level_session or $level_cookie == 'admin') { ?>
+                                    <?php if ($level == 'admin') { ?>
                                         <li>
                                             <a href="admin/index.php">beranda</a>
                                         </li>
-                                    <?php } else if ($level_session or $level_cookie == 'pustakawan') { ?>
+                                    <?php } else if ($level == 'pustakawan') { ?>
                                         <li>
                                             <a href="pustakawan/index.php">beranda</a>
                                         </li>

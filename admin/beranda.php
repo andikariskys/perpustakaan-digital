@@ -1,3 +1,24 @@
+<?php
+
+// Query untuk menghitung jumlah kategori buku
+$queryKategori = "SELECT COUNT(*) AS total FROM data_kategori";
+$resultKategori = mysqli_query($conn, $queryKategori);
+$dataKategori = mysqli_fetch_assoc($resultKategori);
+$totalKategori = $dataKategori['total'];
+
+// Query untuk menghitung jumlah buku tersedia
+$queryBuku = "SELECT COUNT(*) AS total FROM data_buku";
+$resultBuku = mysqli_query($conn, $queryBuku);
+$dataBuku = mysqli_fetch_assoc($resultBuku);
+$totalBuku = $dataBuku['total'];
+
+// Query untuk menghitung jumlah user admin/pustakawan
+$queryUser = "SELECT COUNT(*) AS total FROM data_user";
+$resultUser = mysqli_query($conn, $queryUser);
+$dataUser = mysqli_fetch_assoc($resultUser);
+$totalUser = $dataUser['total'];
+?>
+
 <div class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -22,7 +43,7 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>4</h3>
+                        <h3><?= $totalKategori ?></h3>
 
                         <p>Jenis kategori buku</p>
                     </div>
@@ -37,7 +58,7 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>53</h3>
+                        <h3><?= $totalBuku ?></h3>
 
                         <p>Buku tersedia</p>
                     </div>
@@ -52,7 +73,7 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                     <div class="inner">
-                        <h3>5</h3>
+                        <h3><?= $totalUser ?></h3>
 
                         <p>Total user admin/pustakawan</p>
                     </div>

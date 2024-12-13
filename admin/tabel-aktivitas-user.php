@@ -1,3 +1,7 @@
+<?php
+$sql = "SELECT data_log.*, data_user.nama FROM data_log JOIN data_user ON data_log.id_user = data_user.id_user ORDER BY data_log.tgl_log DESC";
+$result = mysqli_query($conn, $sql);
+?>
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -28,18 +32,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Rochman Rosyad</td>
-                            <td>login</td>
-                            <td>2024-12-08 20:12:55</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Rina Sari</td>
-                            <td>logout</td>
-                            <td>2024-12-08 20:12:56</td>
-                        </tr>
+                        <?php if (mysqli_num_rows($result) > 0) {
+                            $no = 1;
+                            while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                                <tr>
+                                    <td><?= $no++ ?></td>
+                                    <td><?= $row['nama'] ?></td>
+                                    <td><?= $row['informasi'] ?></td>
+                                    <td><?= $row['tgl_log'] ?></td>
+                                </tr>
+                        <?php
+                            }
+                        } else {
+                            echo "<tr><td colspan='8'>Tidak ada data pengguna.</td></tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>

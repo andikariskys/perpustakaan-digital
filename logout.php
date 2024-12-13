@@ -1,4 +1,11 @@
 <?php
+
+include 'helper/koneksi.php';
+$id = uniqid();
+$id_user = $id_user;
+$sql = "INSERT INTO data_log(id_log, id_user, informasi) VALUES('$id', '$id_user', 'logout')";
+mysqli_query($conn, $sql);
+
 session_start();
 
 session_unset();

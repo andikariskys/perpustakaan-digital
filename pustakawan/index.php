@@ -32,7 +32,7 @@
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
   <?php
   include '../helper/koneksi.php';
-  if ($level_session or $level_cookie != 'pustakawan') {
+  if ($level != 'pustakawan') {
     echo "<script>
         alert('Silakan login terlebih dahulu!');
         window.location.href='../index.php?page=signin'
@@ -185,7 +185,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="../signout.php" class="nav-link active bg-danger">
+              <a href="../logout.php" class="nav-link active bg-danger">
                 <i class="nav-icon fas fa-sign-out-alt"></i>
                 <p>
                   Keluar/Sign Out
